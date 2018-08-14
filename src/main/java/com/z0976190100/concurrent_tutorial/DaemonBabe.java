@@ -9,10 +9,13 @@ public class DaemonBabe implements Runnable {
         while (true) {
 
             try {
-                sleep(3000);
+
                 System.out.println("Im alive!");
+
+                    sleep(5);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                System.out.println("ouch!");
+                return;
             }
         }
     }
